@@ -1,0 +1,286 @@
+/*variables*/
+:root {
+  --color-blue: #4f7df3;
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-red: hsl(354, 100%, 66%);
+
+  --color-gray: hsl(0, 0%, 59%);
+  --color-dark-gray: hsl(209, 33%, 12%);
+
+  --color-gray-opacity: hsla(0, 0%, 59%, 0.4);
+  --color-blue-opacity: hsla(223, 87%, 63%, 0.7);
+}
+/*normalize*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*root*/
+html {
+  font-size: 62.5%;
+}
+/*container page*/
+body {
+  height: auto;
+
+  font-family: "Libre Franklin", sans-serif;
+}
+/*component*/
+.page-ping {
+  display: flex;
+  flex-direction: column;
+}
+/*logo section*/
+.page-ping__logo-box {
+  width: 100%;
+
+  padding: 6rem 0;
+}
+.page-ping__logo {
+  display: block;
+  width: 8rem;
+
+  margin: auto;
+}
+/*text section*/
+.page-ping__text-box {
+  text-align: center;
+
+  margin-bottom: 4rem;
+}
+.page-ping__title {
+  color: var(--color-dark-gray);
+  font-weight: 700;
+  font-size: 4.4rem;
+
+  margin-bottom: 2rem;
+}
+.page-ping__thin-title {
+  color: var(--color-gray);
+  font-weight: 300;
+}
+.page-ping__text {
+  color: var(--color-dark-gray);
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+/*input email section*/
+.page-ping__notify-box {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-bottom: 6rem;
+}
+.auto-check {
+  position: relative;
+
+  width: 38rem;
+}
+.auto-check--margin {
+  margin-right: 1.5rem;
+}
+.auto-check__input {
+  width: 100%;
+
+  padding: 1.4rem 3rem;
+
+  color: var(--color-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  border-radius: 10rem;
+  border: 2px solid var(--color-gray-opacity);
+  outline: none;
+}
+.auto-check__input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-gray-opacity);
+  opacity: 1; /* Firefox */
+}
+.auto-check__input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-gray-opacity);
+}
+.auto-check__input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--color-gray-opacity);
+}
+.auto-check__input--alert {
+  border: 2px solid var(--color-red);
+}
+.auto-check__text-alert {
+  height: 0rem;
+  overflow: hidden;
+  opacity: 0;
+
+  position: relative;
+
+  color: var(--color-red);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 300;
+
+  padding: 0.5rem 2rem;
+  padding-bottom: 0;
+
+  transition: opacity 0.4s, height 0.4s linear;
+}
+.auto-check__text-alert--visible {
+  height: auto;
+  opacity: 1;
+}
+.notify-mail__btn {
+  background-color: var(--color-blue);
+
+  padding: 1.4rem 6rem;
+
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 10rem;
+}
+.notify-mail__btn:hover {
+  background-color: var(--color-blue-opacity);
+}
+/*image section*/
+.page-ping__image-box {
+  max-width: 55rem;
+
+  margin: auto;
+
+  margin-bottom: 6rem;
+}
+.page-pign__image {
+  display: block;
+
+  width: 100%;
+}
+/*social network section*/
+.page-ping__social-network {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.social-network {
+  display: inline-block;
+  padding: 0.6rem;
+
+  border: 0.2rem solid var(--color-gray-opacity);
+  border-radius: 100%;
+}
+.social-network:hover {
+  background-color: var(--color-blue);
+}
+.social-network--margin {
+  margin-right: 1.5rem;
+}
+.social-network__image {
+  display: block;
+
+  width: 1.4rem;
+
+  filter: invert(39%) sepia(81%) saturate(837%) hue-rotate(196deg)
+    brightness(101%) contrast(91%);
+}
+.social-network:hover .social-network__image {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(101%);
+}
+/*footer page*/
+.footer-page {
+  color: var(--color-gray);
+  text-align: center;
+  font-weight: 300;
+
+  padding-bottom: 4rem;
+}
+@media screen and (max-width: 540px) {
+  /*root*/
+  html {
+    font-size: 52.5%;
+  }
+}
+@media screen and (max-width: 426px) {
+  /*root*/
+  html {
+    font-size: 62.5%;
+  }
+  /*component*/
+  .page-ping {
+    padding: 0 4rem;
+  }
+  /*text section*/
+  .page-ping__title {
+    font-size: 2.8rem;
+  }
+  .page-ping__text {
+    font-size: 1.6rem;
+  }
+  /*input email section*/
+  .page-ping__notify-box {
+    width: 100%;
+  }
+  /*image section*/
+  .page-ping__image-box {
+    width: 100%;
+  }
+  /*input email section*/
+  .page-ping__notify-box {
+    flex-direction: column;
+
+    padding: 0 1.5rem;
+  }
+  .auto-check {
+    width: 100%;
+  }
+  .auto-check--margin {
+    margin-right: 0rem;
+  }
+  .auto-check__input {
+    padding: 1.4rem 4rem;
+  }
+  .auto-check__text-alert {
+    text-align: center;
+  }
+  .notify-mail__btn {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  /*root*/
+  html {
+    font-size: 60.5%;
+  }
+}
+@media screen and (max-width: 360px) {
+  /*root*/
+  html {
+    font-size: 58.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  /*root*/
+  html {
+    font-size: 52.5%;
+  }
+}
+@media screen and (max-width: 280px) {
+  /*root*/
+  html {
+    font-size: 45.5%;
+  }
+}

@@ -8,27 +8,57 @@
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <!--main page-->
+  <main class="main-page">
+    <!--component-->
+    <div class="page-ping">
+      <!--logo section-->
+      <div class="page-ping__logo-box">
+        <img src="./images/logo.svg" alt="logo image" class="page-ping__logo">
+      </div>
+      <!--text section-->
+      <div class="page-ping__text-box">
+        <h1 class="page-ping__title">
+          <span class="page-ping__thin-title">We are launching</span> soon!
+        </h1>
+        <span class="page-ping__text">Subscribe and get notified</span>
+      </div>
+      <!--input email section-->
+      <div class="page-ping__notify-box">
+        <div class="auto-check auto-check--margin">
+          <input type="text" placeholder="Your email address..." class="auto-check__input">
+          <p class="auto-check__text-alert">Pleace provide a valid email address</p>
+        </div>
+        <a class="notify-mail__btn">Notify Me</a>
+      </div>
+      <!--image section-->
+      <div class="page-ping__image-box">
+        <img src="./images/illustration-dashboard.png" alt="dashboard image" class="page-pign__image">
+      </div>
+      <!--social network section-->
+      <div class="page-ping__social-network">
+        <a href="https://www.facebook.com/" target="_blank" class="social-network social-network--margin">
+          <img src="./images/facebook.svg" alt="facebook logo" class="social-network__image">
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="social-network social-network--margin">
+          <img src="./images/twitter.svg" alt="twitter logo" class="social-network__image">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-network">
+          <img src="./images/instagram.svg" alt="instagram logo" class="social-network__image">
+        </a>
+      </div>
+    </div>
+  </main>
+  <!--footer-page-->
+  <footer class="footer-page">&copy; Copyright Ping. All rights reserved.</footer>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
