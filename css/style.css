@@ -204,6 +204,12 @@ body {
 
   padding-bottom: 4rem;
 }
+@media screen and (min-width: 1800px) {
+  /*root*/
+  html {
+    font-size: 80%;
+  }
+}
 @media screen and (max-width: 540px) {
   /*root*/
   html {
